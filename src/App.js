@@ -2,14 +2,15 @@
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 // import data
 import DATA from './DATA.json';
 
 // import components
-import Header from './components/Header';
 import MainPage from './components/main-page/MainPage';
+import FolderPage from './components/folder-page/FolderPage';
+import NotePage from './components/note-page/NotePage';
 
 import './App.css';
 
@@ -21,7 +22,11 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Route exact path="/" component={MainPage} data={DATA} />
+        <Switch>
+          <Route exact path="/" component={MainPage} data={DATA} />
+          <Route path="/folder" component={FolderPage} />
+          <Route path="/note" component={NotePage} />
+        </Switch>
       </div>
     );
   }

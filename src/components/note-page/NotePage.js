@@ -1,10 +1,9 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
 
 import Header from '../Header';
-import NoteMain from './MainSection';
-import NoteSidebar from './MainSidebar';
+import NoteMain from './NoteMain';
+import NoteSidebar from './NoteSidebar';
 
 export default class NotePage extends Component {
   render() {
