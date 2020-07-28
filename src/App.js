@@ -21,8 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Header />
-        <Route exact path="/" component={MainPage} />
+        <Route exact path="/" component={MainPage} data={DATA} />
       </div>
     );
   }

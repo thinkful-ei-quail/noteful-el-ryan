@@ -3,16 +3,16 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 
 import Header from '../Header';
-import MainSection from './MainSection';
-import MainSidebar from './MainSidebar';
+import FolderMain from './FolderMain';
+import FolderSidebar from './FolderSidebar';
 
-export default class MainPage extends Component {
+export default class FolderPage extends Component {
   render() {
     return (
       <div className="main">
         <Header />
-        <MainSidebar />
-        <MainSection />
+        <FolderSidebar />
+        <FolderMain />
       </div>
     );
   }

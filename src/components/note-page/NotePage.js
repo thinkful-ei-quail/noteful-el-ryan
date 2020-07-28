@@ -3,16 +3,16 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 
 import Header from '../Header';
-import MainSection from './MainSection';
-import MainSidebar from './MainSidebar';
+import NoteMain from './MainSection';
+import NoteSidebar from './MainSidebar';
 
-export default class MainPage extends Component {
+export default class NotePage extends Component {
   render() {
     return (
       <div className="main">
         <Header />
-        <MainSidebar />
-        <MainSection />
+        <NoteMain />
+        <NoteSidebar />
       </div>
     );
   }

@@ -6,7 +6,7 @@ export default class NoteSidebar extends Component {
   render() {
     return (
       <div className="sidebar">
-        <p>Main</p>
+        <p>Note Sidebar</p>
       </div>
     );
   }

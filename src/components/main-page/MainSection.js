@@ -2,11 +2,11 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 
-export default class NoteMain extends Component {
+export default class MainPage extends Component {
   render() {
     return (
-      <div className="sidebar">
-        <p>Note Main</p>
+      <div>
+        <p>Main Section</p>
       </div>
     );
   }
